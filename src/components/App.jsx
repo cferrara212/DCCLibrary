@@ -3,6 +3,7 @@ import './App.css';
 import TitleBar from "./TitleBar/TitleBar"
 import BookViewer from './BookViewer/BookViewer.jsx';
 import CreateBook from './CreateBook/CreateBook';
+import Footer from './Footer/Footer';
 
 class App extends Component {
     constructor(props){
@@ -54,6 +55,7 @@ render (){
             <TitleBar  />
             <BookViewer book={this.books[this.state.bookNumber]} nextBook={this.goToNextBook} previousBook={this.goToLastBook} />
             <CreateBook createNewBook={this.createNewBook} />
+            <Footer />
         </div>    
     )
 }
